@@ -36,6 +36,14 @@ btn.addEventListener('click', ()=>{
             content : todoInput.value,
         }
         todos.push(todoObject);
-        
+      localStorage.setItem('todos',JSON.stringify(todos));
+      createListElement(todoObject);
+      todoInput.value ='';  
     }
-})
+});
+
+todoInput.addEventListener('keydown', (e) => {
+    if(e.key ==='Enter'){
+        btn.click();
+    }
+} )
