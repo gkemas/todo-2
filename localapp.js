@@ -60,7 +60,7 @@ todoInput.addEventListener("keydown", (e) => {
     btn.click();
   }
 });
-
+//
 //? delete ve ok butonları için event tanimlamasi
 todoUl.addEventListener("click", (e) => {
   const id = e.target.parentElement.getAttribute("id");
